@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("/static/images/geu.jpg") no-repeat center center/cover;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.content button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    background: #2ecc71;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background: #27ae60;
+}

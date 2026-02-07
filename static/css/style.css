@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+#map {
+    margin-top: 50px; /* push map below navbar */
+    height: calc(100vh - 50px); /* fill remaining screen */
+    width: 100%;
+}
+
+.info-box {
+    position: fixed; /* remove from map flow */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 100000; /* higher than all Leaflet panes */
+    pointer-events: auto; /* clickable if needed */
+}
